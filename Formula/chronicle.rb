@@ -1,20 +1,20 @@
 class Chronicle < Formula
   desc "Local-first, privacy-driven activity tracker with a correctable timeline and chat."
   homepage "https://chronicled.dev"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/james-clarke/chronicle/releases/download/v0.1.1/chronicle-aarch64-apple-darwin.tar.xz"
-      sha256 "56ec66aab4846118e826573c9a9cba37c420d6c1ff51cfa8eeeb0185d234a464"
+      url "https://github.com/james-clarke/chronicle/releases/download/v0.1.2/chronicle-aarch64-apple-darwin.tar.xz"
+      sha256 "991e9cc3289cbe778e5f6ecaadcf4b2738dadb5cd4d760eff62a7419d3a6859f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/james-clarke/chronicle/releases/download/v0.1.1/chronicle-x86_64-apple-darwin.tar.xz"
-      sha256 "616d834177143aa853ab224e038aceedf847a409c119c65025738e3142051237"
+      url "https://github.com/james-clarke/chronicle/releases/download/v0.1.2/chronicle-x86_64-apple-darwin.tar.xz"
+      sha256 "0c7ee92d61905a8e01bd232e2afe5d22d7039a5654939a1ffd88fb53e74e0a24"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/james-clarke/chronicle/releases/download/v0.1.1/chronicle-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "a9eb5d3afa3976408612e03e6a4ebcb4594ee3eca43065c3dbf725213d4523fd"
+    url "https://github.com/james-clarke/chronicle/releases/download/v0.1.2/chronicle-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "2c2c92dcbd5b676ef63c79a6934603af362695b6af562ad1ca7f5c44d250d9bc"
   end
   license "AGPL-3.0-only"
 
